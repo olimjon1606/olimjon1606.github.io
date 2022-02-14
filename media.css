@@ -20,6 +20,9 @@
     #portfolio .grid {
         grid-template-columns: 1fr;
       }
+    .container-fluid{
+    width: 90%;
+  }
 
 
 
