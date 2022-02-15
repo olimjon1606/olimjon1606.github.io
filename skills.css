@@ -1,0 +1,259 @@
+
+#skills{
+    padding-top: 60px;
+}
+#skills p{
+    padding: 5px 40px 30px 0px;
+}
+#skills .row{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 0px;
+    margin-left: 0px;
+}
+.loading{
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 210px;
+  animation: animateBackgroundColor 13s linear infinite;
+  margin-left: -15px !important;
+}
+
+.loading .blocks{
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  background: #050c09;
+  left: 50%;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  transform: rotate(calc(7.2deg * var(--i)));
+  transform-origin: 0 80px ;
+}
+.blocks-per{
+  animation: animate 15s linear infinite;
+  animation-delay: calc((1s / 45) * var(--i)) ;
+}
+@keyframes animate{
+  0%{
+      background: #050c09;
+      box-shadow: none;
+  }
+  1%{
+      background: #64ffda;
+      box-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda,
+          0 0 30px #64ffda;
+  }
+  50%{
+    background: #64ffda;
+    box-shadow:
+        0 0 5px #64ffda,
+        0 0 15px #64ffda,
+        0 0 30px #64ffda;
+  }
+  
+ 100%{
+      background: #050c09;
+      box-shadow: none;
+  }
+}
+
+
+/* PERCENT */
+#skills .loading h3{
+  position: absolute;
+  top: 80px;
+  left: 96px;
+  transform: translate(-50%,-50%);
+  letter-spacing: 2px;
+  color: #777;
+  font-weight: 700;
+  font-size: 30px;
+  transition: .5s;
+}
+
+.percent{
+  animation: animatePercent 15s ease-in-out infinite;
+  animation-delay: calc(((1s / 45) * var(--i))-2);
+}
+@keyframes animatePercent{
+  0%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 25px;
+  }
+  5%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 25px;
+  }
+  10%{
+      color: #64ffda;
+      font-size: 35px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  }
+  50%{
+      color: #64ffda;
+      font-size: 35px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  }
+  90%{
+      color: #64ffda;
+      font-size: 35px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda,
+          0 0 30px #64ffda;
+  }
+ 100%{
+      font-size: 25px;
+      color: #050c09;
+      text-shadow: none;
+  }
+}
+
+
+/* PERCENT END */
+
+
+/* SPAN */
+.span{
+  animation: htmlSpan 15s ease-in-out infinite;
+  animation-delay: calc(((1s / 45) * var(--i))-2);
+}
+@keyframes htmlSpan{
+  0%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 18px;
+  }
+  5%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 18px;
+  }
+  10%{
+      color: #64ffda;
+      font-size: 24px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda,
+          0 0 30px #64ffda;
+  }
+  50%{
+      color: #64ffda;
+      font-size: 24px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda,
+          0 0 30px #64ffda;
+  }
+  90%{
+      color: #64ffda;
+      font-size: 24px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda,
+          0 0 30px #64ffda;
+  }
+ 100%{
+      font-size: 18px;
+      color: #050c09;
+      text-shadow: none;
+  }
+}
+
+
+/* SPAN END */
+
+
+/* TEXT */
+#skills .loading h4 {
+  color: #777;
+  font-weight: 800;
+  margin-top: 20px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+.text-html{
+  position: absolute;
+  bottom: 5px;
+  left: 55px;
+}
+.text{  
+  animation: animateText 15s ease-in-out infinite;
+  animation-delay: calc(((1s / 45) * var(--i))-2);
+}
+@keyframes animateText{
+  0%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 18px;
+  }
+  5%{
+      color: #050c09;
+      text-shadow: none;
+      font-size: 18px;
+  }
+  10%{
+      color: #64ffda;
+      font-size: 22px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  }
+  50%{
+      color: #64ffda;
+      font-size: 22px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  }
+  90%{
+      color: #64ffda;
+      font-size: 22px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  }
+ 100%{
+      font-size: 18px;
+      color: #050c09;
+      text-shadow: none;
+  }
+}
+
+.text-css{
+  position: absolute;
+  bottom: 5px;
+  left: 65px;
+}
+
+.text-js{
+  position: absolute;
+  bottom: 5px;
+  left: 80px;
+}
+
+
+.text-bootstrap{
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+}
+
+.text-wordpress{
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}
