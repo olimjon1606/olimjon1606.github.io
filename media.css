@@ -84,6 +84,9 @@
   #footer .social-footer li:hover span{
     transform: scale(1);
   } 
+    #footer p{
+        font-size: 15px;}
+    
   .my-email{
     display: none;
   }
