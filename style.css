@@ -621,6 +621,10 @@ p {
   position: relative;
 }
 
+#contact .grid ul  .btn a{
+  color: var(--green);
+
+}
 #contact .grid ul  .btn{
   width: 100%;
   padding: 10px;
@@ -636,6 +640,10 @@ p {
 
 #contact .grid ul .btn:hover{
   background-color: var(--green);
+  color: var(--dark-navy);
+  transform: scale(1.05);
+}
+#contact .grid ul .btn:hover a{
   color: var(--dark-navy);
   transform: scale(1.05);
 }
