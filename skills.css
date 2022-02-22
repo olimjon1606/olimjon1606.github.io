@@ -11,6 +11,9 @@
     grid-gap: 0px;
     margin-left: 0px;
 }
+#skills .skills-title p span{
+ color: var(--green);
+}
 .loading{
   position: relative;
   display: flex;
