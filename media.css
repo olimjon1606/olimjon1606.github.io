@@ -1,72 +1,124 @@
-@media (max-width: 1200px){
-    #skills .row{
-        grid-template-columns: 25% 25% 25% 25%;
-    }
+@media (max-width: 1200px) {
+  #skills .row {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
-@media (max-width: 1000px){
-    #contact .grid{
-        grid-template-columns: 1fr;
-        grid-gap: 25px;
-      }
-      #skills .row{
-        grid-template-columns: 33% 33% 33%;
-    }
-    #portfolio .grid {
-        grid-template-columns: 1fr;
-        
-      }
+@media (max-width: 1000px) {
+  #contact .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  #skills .row {
+    grid-template-columns: 33% 33% 33%;
+  }
+  #portfolio .grid {
+    grid-template-columns: 1fr;
+  }
 }
-@media (max-width: 768px){
-  #header{
+@media (max-width: 768px) {
+  #header {
     text-align: center;
   }
-  #header .nav-link{
+  #header .nav-link {
     width: 25%;
     padding-top: 20px;
     padding-bottom: 0px;
     margin: auto;
   }
-    #portfolio .grid {
-        grid-template-columns: 1fr;
-      }
-      /* social-footer */
-      .resume-button.style-btn{
-        width: 50%;
-        margin: 30px auto 20px;
-      }
-  #footer .social-footer{
+
+  .my-email {
+    display: none;
+  }
+
+  #first .social-links {
+    display: none;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+  #about .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #about {
+    margin-bottom: 250px;
+  }
+  #about .image-part {
+    margin-left: 5%;
+  }
+  .container {
+    width: 80%;
+  }
+  #skills .container {
+    width: 90%;
+  }
+
+  #portfolio .grid {
+    grid-template-columns: 1fr;
+  }
+  #portfolio .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #portfolio .container .text-box{
+    padding: 10px 10px;
+    padding-left: 15px;
+  
+    
+  }
+  #portfolio .container .text-box h4 a{
+    font-size: 20px;
+    color: var(--green);
+  }
+  #portfolio .container .text-box p {
+    font-size: 18px;
+    font-family:  monospace;
+    padding: 4px;
+  }
+  #portfolio .container .text-box li{
+    padding: 0px;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+
+  /* social-footer */
+  .resume-button.style-btn {
+    width: 50%;
+    margin: 30px auto 20px;
+  }
+  #footer .social-footer {
     display: block;
     padding: 7px 0;
     padding-top: 40px;
   }
-  #footer .social-footer ul{
-      margin: 0;
-      padding: 0;
+  #footer .social-footer ul {
+    margin: 0;
+    padding: 0;
   }
-  #footer .social-footer li{
+  #footer .social-footer li {
     padding: 10px 13px;
     display: inline;
   }
-  #footer .social-footer li a{
+  #footer .social-footer li a {
     font-size: 22px;
     color: var(--light-slate);
   }
-   #footer .social-footer span{
+  #footer .social-footer span {
     padding: 3px 5px;
     background-color: var(--green);
-    margin-left:-40px;
+    margin-left: -40px;
     margin-top: -35px;
     border-radius: 3px;
-    position: absolute; 
+    position: absolute;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: var(--navy);
     transform: scale(0);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
-  #footer .social-footer span::after{
-    content: '';
-     position: absolute; 
+  #footer .social-footer span::after {
+    content: "";
+    position: absolute;
     width: 13px;
     height: 13px;
     background-color: var(--green);
@@ -77,70 +129,87 @@
     z-index: -1;
   }
   #footer .social-footer li a:hover i {
-    transition: ease-out .2s;
+    transition: ease-out 0.2s;
     color: var(--green);
-   transform: scale(1.2);
+    transform: scale(1.2);
   }
-  #footer .social-footer li:hover span{
+  #footer .social-footer li:hover span {
     transform: scale(1);
-  } 
-    #footer p{
-        font-size: 15px;}
-    
-  .my-email{
-    display: none;
   }
   
-  #first .social-links{
-    display: none;
-    
-  }
-  .navbar{
-    flex-wrap: wrap;
-  }
-  #about .grid{
-    display: grid;
-    grid-template-columns:  1fr;
-  }
-  #about{
-      margin-bottom: 250px;
-  }
-  #about .image-part{
-    margin-left: 5% ;
-  }
-  .container {
-    width: 80%;
-    
-  }
-  #skills .container {
-    width: 90%;
-    
-  }
 }
-@media (max-width: 600px){
-  
-  #skills .row{
+@media (max-width: 600px) {
+  #skills .row {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
-}
-
-
-}
-@media (max-width: 500px){
-    .container {
-        width: 90%;
-        
-      }
-}
-@media (max-width: 390px){
-  .container {
-      width: 95%;
-      
-    }
-    #skills .row{
-      grid-template-columns: 1fr;
-      grid-gap: 0;
-      text-align: center;
-      align-items: center;
   }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  #portfolio .container .text-box{
+    width:100%;
+    height: 100%;
+    padding: 5px 5px;
+    padding-left: 15px;
+  
+    
+  }
+  #portfolio .container .text-box h4 a{
+    font-size: 16px;
+    color: var(--green);
+  }
+  #portfolio .container .text-box p {
+    font-size: 12px;
+    font-family:  monospace;
+    padding: 4px;
+  }
+  #portfolio .container .text-box li{
+    padding: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .loading{
+    margin-left: -3=25px !important;
+  }
+  #skills p{
+    padding: 0px;
+  }
+  footer p{
+    padding: 20px 20px;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-slate);
+    letter-spacing: 1.2px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    width: 95%;
+  }
+  #skills .row {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    text-align: center;
+    align-items: center;
+  }
+  #portfolio .container .text-box{
+    padding: 5px 0px;
+    padding-left: 15px;
+  
+    
+  }
+  #portfolio .container .text-box p {
+    font-size: 12px;
+    font-family:  monospace;
+    padding: 0px;
+  }
+  #portfolio .container .text-box li{
+    padding: 0px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  
 }
