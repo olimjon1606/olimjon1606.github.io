@@ -53,7 +53,7 @@ body {
   color: var(--slate);
 }
 canvas{
-  background: yellow;
+  background: var(--navy);
   position: fixed; 
   z-index: -999;
   height: 100%;
