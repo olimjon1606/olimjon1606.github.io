@@ -56,7 +56,6 @@ canvas{
   background: var(--navy);
   position: fixed; 
   z-index: -999;
-  height: 100%;
 }
 a {
   text-decoration: none;
