@@ -1,0 +1,123 @@
+
+#skills{
+    padding-top: 60px;
+}
+#skills p{
+    padding: 5px 40px 30px 0px;
+}
+#skills .row{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 0px;
+    margin-left: 0px;
+}
+#skills .skills-title p span{
+ color: var(--green);
+}
+.loading{
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 210px;
+  animation: animateBackgroundColor 13s linear infinite;
+  margin-left: -15px !important;
+}
+
+.loading .blocks{
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  background: #050c09;
+  left: 50%;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  transform: rotate(calc(7.2deg * var(--i)));
+  transform-origin: 0 80px ;
+}
+.blocks-per{
+  background: #64ffda !important;
+    box-shadow:
+        0 0 5px #64ffda,
+        0 0 15px #64ffda,
+        0 0 30px #64ffda;
+}
+
+/* PERCENT */
+#skills .loading h3{
+  position: absolute;
+  top: 80px;
+  left: 96px;
+  transform: translate(-50%,-50%);
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 30px;
+  transition: .5s;
+  color: #64ffda;
+      font-size: 35px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+}
+
+
+
+/* PERCENT END */
+
+
+/* SPAN */
+.span{
+  color: #64ffda;
+      font-size: 24px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+}
+
+
+/* SPAN END */
+
+
+/* TEXT */
+#skills .loading h4 {
+  color: #64ffda;
+      font-size: 22px;
+      text-shadow:
+          0 0 5px #64ffda,
+          0 0 15px #64ffda;
+  font-weight: 800;
+  margin-top: 20px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+.text-html{
+  position: absolute;
+  bottom: 5px;
+  left: 55px;
+}
+.text-css{
+  position: absolute;
+  bottom: 5px;
+  left: 65px;
+}
+
+.text-js{
+  position: absolute;
+  bottom: 5px;
+  left: 80px;
+}
+
+
+.text-bootstrap{
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+}
+
+.text-wordpress{
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}
