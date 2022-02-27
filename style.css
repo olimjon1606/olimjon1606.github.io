@@ -2,7 +2,7 @@
 
 :root {
   --dark-navy: #020c1b;
-  --navy: #0a192f;
+  --navy: rgb(10, 25, 47);
   --light-navy: #112240;
   --lightest-navy: #233554;
   --navy-shadow: rgba(2,12,27,0.7);
@@ -51,6 +51,12 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--navy);
   color: var(--slate);
+}
+canvas{
+  background: yellow;
+  position: fixed; 
+  z-index: -999;
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -262,6 +268,7 @@ button:focus:not(:focus-visible) {
 /* #first */
 #first{
   max-height: 100vh;
+  margin-top: 60px;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 10px;
@@ -279,6 +286,9 @@ h1, h2, h3, h4, h5, h6 {
 #first .big-heading{
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
+}
+#first h2, #first h3{
+  margin-bottom: 20px !important;
 }
 #first h3{
   margin-top: 10px;
@@ -641,7 +651,6 @@ p {
 
 #contact .grid ul .btn:hover{
   background-color: var(--green);
-  color: var(--dark-navy);
   transform: scale(1.05);
 }
 #contact .grid ul .btn:hover a{
