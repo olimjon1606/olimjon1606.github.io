@@ -32,4 +32,3 @@ function draw() {
 }
 draw();
 setInterval(draw, 50);
-window.addEventListener("resize", () => location.reload());
