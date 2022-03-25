@@ -52,6 +52,8 @@ body {
   background-color: var(--navy);
   color: var(--slate);
 }
+
+
 canvas{
   position: fixed; 
   z-index: -999;

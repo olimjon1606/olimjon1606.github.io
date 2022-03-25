@@ -18,7 +18,7 @@ function draw() {
     context.fillStyle = "rgba(10, 25, 47, 0.1)";
     context.fillRect(0, 0, W, H);
     context.fontSize = "700 " + fontSize + "px";
-    context.fillStyle = "#00ff00ee";
+    context.fillStyle = "#00ff0088";
     for (var i = 0; i < columns; i++) {
         var index = Math.floor(Math.random() * str.length);
         var x = i * fontSize;
