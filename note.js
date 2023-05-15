@@ -117,7 +117,7 @@ const archive = [
     },
 
 ]
-console.log(fetch("data.txt"))
+// console.log(fetch("data.txt"))
 const projectContainer = document.querySelector(".project-container")
 const archiveContainer = document.querySelector(".box-container")
 const projectMoreBtn = document.querySelector(".btn-pr-more")
