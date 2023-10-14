@@ -1,12 +1,12 @@
 const projects = [
     {
         id: 1,
-        label: "buttermilk pancakes",
-        title: ["breakfast", "https://olimjonorifjonov.com/",],
-        details: "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed",
-        list: ["home", "hello", "bye", "asdsa", "dasds"],
-        img: "./images/image-code-box.png",
-        links: ["https://github.com/olimjon1606/", "insta"],
+        label: "Featured Project",
+        title: ["GitFinder", "https://gitfinderr.netlify.app/",],
+        details: "Git Finder is a user-friendly web application for GitHub enthusiasts. With a simple username search, you can access valuable information about any GitHub user. Explore their repositories, followers, and followings effortlessly. Git Finder leverages the GitHub API, ensuring you get the latest updates.",
+        list: ["JavaScript", "Node.js", "GitHub API", "CSS", "HTML"],
+        img: "./images/project/gitfinder.png",
+        links: ["https://github.com/olimjon1606/GitHub-App", "https://gitfinderr.netlify.app/"],
 
     },
     {
@@ -28,17 +28,7 @@ const projects = [
         img: "./images/image-coffee.png",
         links: ["git", "insta"],
 
-    },
-    {
-        id: 4,
-        label: " pancakes",
-        title: ["breakfast", "https://olimjonorifjonov.com/",],
-        details: "I'm baby baby woke mlkshk wolf bitters live-edge blue bottle woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed",
-        list: ["home", "hello", "bye"],
-        img: "./images/image-code-box.png",
-        links: ["git", "insta"],
-
-    },
+    }
 
 ]
 
@@ -204,7 +194,7 @@ function displayProjects(projects) {
             </div>
         </div>
         <div class="project-img">
-            <a href="https://github.com/" target="_blank">
+            <a href="${item.links[1]}" target="_blank">
                 <img src=${item.img} alt="project img" />
             </a>
         </div>
@@ -229,8 +219,8 @@ projectMoreBtn.addEventListener("click", () => {
         displayArchive(archive, archive.length);
         projectMoreBtn.textContent = "Show less"
         projectMoreBtn.classList.remove("clicked")
-        }
-    else{
+    }
+    else {
         let number = 6
         displayArchive(archive, number);
         projectMoreBtn.textContent = "Show more"

@@ -1,3 +1,42 @@
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, 0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -37,12 +76,12 @@ button {
     cursor: pointer;
 }
 
-ul,
+/* ul,
 ol {
     padding: 0;
     margin: 0;
     list-style: none;
-}
+} */
 
 svg {
     width: 100%;
@@ -54,6 +93,10 @@ img {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
+}
+
+h2 {
+    color: #fff;
 }
 
 /* 
@@ -79,8 +122,8 @@ img {
 } */
 
 .project-container {
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 70%;
+    margin: 150px auto;
 }
 
 .project {
@@ -123,34 +166,35 @@ img {
 
 .project-details .project-description {
     position: relative;
-    background-color: #252525;
+    /* background-color: #252525 */
     padding: 25px;
     margin: 30px 0 20px;
     z-index: 5;
-    border-radius: 10px;
-
-
-    /* @include tablet {
-        background-color: transparent;
-        padding: 20px 0;
-    } */
-}
-.project-description p{
-    font-size: 18px;
-    margin: 0;
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+    background-color: var(--light-navy);
+    color: var(--light-slate);
+    font-size: var(--fz-lg);
 }
 
 .project-details ul {
     display: flex;
     margin-top: 0px;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .project-details li {
     margin-right: 20px;
     color: #aaa;
-    font-family: monospace;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    z-index: 100;
+}
+
+.project-details li a i {
+    font-size: 24px;
+    font-weight: 100px;
 }
 
 .project-img {
@@ -158,7 +202,7 @@ img {
     background-color: #64ffda;
     background: linear-gradient(0.4turn, #64ffda, #64ff8d);
     border-radius: 10px;
-    grid-column:  6/ -1;
+    grid-column: 6/ -1;
     grid-row: 1 / -1;
     height: 100%;
 
@@ -167,7 +211,7 @@ img {
     }
 }
 
-.project-img a{
+.project-img a {
     width: 100%;
     height: 100%;
 }
@@ -178,8 +222,8 @@ img {
     border-radius: 10px;
 
     position: relative;
-    mix-blend-mode: multiply; 
-     filter: grayscale(100%) contrast(1); 
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
     height: 100%;
 
     @media screen and (max-width: 768px) {
@@ -188,6 +232,7 @@ img {
         height: 100%;
     }
 }
+
 .project-img a::before {
     content: "";
     position: absolute;
@@ -200,14 +245,16 @@ img {
     background-color: #0a192fa2;
     border-radius: 10px;
 }
+
 .project-img:hover img {
-    mix-blend-mode: normal; 
+    mix-blend-mode: normal;
     filter: none;
     transition: all 1s ease-out;
-    
+
 }
+
 .even .project-content {
-    grid-column:  7/ -1;
+    grid-column: 7/ -1;
     grid-row: 1 / -1;
     text-align: end;
 }
@@ -223,69 +270,83 @@ img {
     /* margin-top: 20px; */
     justify-content: end;
 }
-a:hover h4, a:hover{
-       color: #64ffda !important;
+
+a:hover h4,
+a:hover {
+    color: #64ffda !important;
 }
 
 
 
 
-.other-projects{
+.other-projects {
     text-align: center;
-    width: 80%;
-    margin: 50px auto;
+    width: 70%;
+    margin: 150px auto;
     transition: all 3s ease;
-    
+
 }
-.box-container{
+
+.box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     text-align: start;
-    padding: 20px;
-    /* transition: all 3s ease-in-out; */
+    /* padding: 20px; */
+    margin-top: 100px;
 }
-.card{
-    width: 330px;
+
+.card {
+    width: 350px;
     padding: 25px;
+    height: 350px;
     background-color: #112240;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
     transition: all .2s ease-in-out;
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0px 3px #64ffda
 }
-.headline{
-    color:#a8b2d1;
+
+.headline {
+    color: #a8b2d1;
+    letter-spacing: 2px;
+    font-weight: 500px;
 }
 
-.icon-links{
+.icon-links {
     display: flex;
     justify-content: space-between;
     font-size: 35px;
-    padding: 15px 0;
+    padding: 10px 5px 0px;
     color: #64ffda;
 }
-.icon-list{
+
+.icon-list {
     display: flex;
     font-size: 24px;
     color: #8892b0;
 }
-.icon-list li{
-    padding:0  6px;
+
+.icon-list li {
+    padding: 0 6px;
 }
-.prog-names{
+
+.prog-names {
     padding: 20px 0 0;
     display: flex;
 }
-.card p{
-    font-size: 18px;
+
+.card p {
+    font-size: 15px;
     color: #8892b0;
 }
-.prog-names li{
+
+.prog-names li {
     padding-right: 20px;
     padding-bottom: 10px;
     font-size: 16px;
@@ -293,11 +354,13 @@ a:hover h4, a:hover{
 }
 
 
- .btn-pr-more:hover,.btn-pr-more:focus-visible {
+.btn-pr-more:hover,
+.btn-pr-more:focus-visible {
     outline: none;
     box-shadow: 4px 4px 0 0 #64ffda;
     transform: translate(-5px, -5px);
 }
+
 .btn-pr-more {
     color: #64ffda;
     background-color: transparent;
@@ -307,4 +370,16 @@ a:hover h4, a:hover{
     text-decoration: none;
     padding: 1.25rem 1.75rem;
     margin: 80px auto 0px;
-    transition: all .2s ease-in-out;}
+    transition: all .2s ease-in-out;
+}
+
+.other-projects .archive {
+    font-size: 18px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    
+}
+
+.other-projects .archive:hover {
+    
+}
