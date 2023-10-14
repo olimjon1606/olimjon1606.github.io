@@ -40,19 +40,16 @@
 html {
     box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
-
 html,
 body {
     width: 100%;
     height: 100%;
 }
-
 body {
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
@@ -76,12 +73,7 @@ button {
     cursor: pointer;
 }
 
-/* ul,
-ol {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-} */
+
 
 svg {
     width: 100%;
@@ -114,7 +106,6 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-
 @mixin tablet {
     @media (max-width: 600px) {
         @content;
@@ -377,9 +368,5 @@ a:hover {
     font-size: 18px;
     color: var(--green);
     font-family: var(--font-mono);
-    
-}
-
-.other-projects .archive:hover {
     
 }
