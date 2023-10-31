@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olimjon Orifjonov</title>
   <link rel="icon" href="images/photo-icon.png" type="image/png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="jquery.svg3dtagcloud.min.js"></script>
+  <link rel="stylesheet" href="note.css" />
 
   <!-- bootstrap_link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,12 +32,16 @@
   <!-- style.css -->
 
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/skills.css">
+  <!-- <link rel="stylesheet" href="./css/skills.css"> -->
   <link rel="stylesheet" href="./project/project.css">
   <link rel="stylesheet" href="./css/media.css">
+
+  <!-- skills JS -->
+
 </head>
 
 <body>
+  <script src="./note.js"></script>
   <canvas id="canvas"></canvas>
   <!-- Header -->
   <div id="header">
@@ -101,7 +108,7 @@
     </div>
     <div class="my-email">
       <span>Email</span>
-      <p><a href="mailto:olimjon.orifjonov.coder@gmail.com" target="_blank">olimjon.orifjonov.coder@gmail.com</a>
+      <p><a href="mailto:olimjon.coder@gmail.com" target="_blank">olimjon.coder@gmail.com</a>
       </p>
     </div>
 
@@ -112,37 +119,18 @@
   <section id="about">
     <div class="container">
       <h2 class="numbered-header">About Me</h2>
-      <div class="grid">
-        <div class="about-grid">
           <p>
-            Hello! My name is Olimjon and I enjoy creating things that live
-            on the <a href="https://www.google.com" target="_blank">Internet</a>. I'm really keen on creating facinating
-            web projects with the help of simple
-            HTML, CSS & JavaScript!
-          </p>
-          <p>
-            Currently I live and study in Lodz, Poland. I'm a first year student in <a href="https://iso.uni.lodz.pl/"
-              target="_blank">University of Lodz</a> in the faculty of <a href="https://en.math.uni.lodz.pl/en/welcome/"
-              target="_blank">Computer Science</a>.
-            Before coming here I completed some basic Web development courses and made some creative projects on my own.
-            Now I'm improving my programming knowledge with the help of high skilled professors like <a
-              href="https://scholar.google.pl/citations?user=RowfmAEAAAAJ&hl=pl" target="_blank">Dorota Bors</a>, <a
-              href="https://usosweb.uni.lodz.pl/kontroler.php?_action=katalog2/osoby/pokazOsobe&os_id=475"
-              target="_blank">Anna Łazińska</a> and others.
+            I am a dynamic and enthusiastic junior web developer with 2.5
+            years of hands-on experience in crafting engaging digital
+            solutions. My journey in web development has been driven by a
+            passion for creating user-friendly and visually appealing websites
+            and applications
           </p>
           <p>
             <em>“Any fool can write code that a computer can understand. Good programmers write code that humans can
               understand.” </em><strong>– Martin Fowler</strong>
           </p>
-        </div>
-        <div class="about-grid text-center">
-          <div class="image-part">
-            <img class="my-image" src="images/my-foto.png" alt="" />
-            <div class="image-box"></div>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
   <!-- End_About -->
 
@@ -170,307 +158,25 @@
   <section id="skills">
     <div class="container">
       <h2 class="numbered-header">Programming Skills</h2>
-      <div class="row skills-content">
-        <div class="skills-box" data-aos="fade-up">
-          <div class="loading">
-            <div class="blocks blocks-per" style="--i:1;"></div>
-            <div class="blocks blocks-per" style="--i:2;"></div>
-            <div class="blocks blocks-per" style="--i:3;"></div>
-            <div class="blocks blocks-per" style="--i:4;"></div>
-            <div class="blocks blocks-per" style="--i:5;"></div>
-            <div class="blocks blocks-per" style="--i:6;"></div>
-            <div class="blocks blocks-per" style="--i:7;"></div>
-            <div class="blocks blocks-per" style="--i:8;"></div>
-            <div class="blocks blocks-per" style="--i:9;"></div>
-            <div class="blocks blocks-per" style="--i:10;"></div>
-            <div class="blocks blocks-per" style="--i:11;"></div>
-            <div class="blocks blocks-per" style="--i:12;"></div>
-            <div class="blocks blocks-per" style="--i:13;"></div>
-            <div class="blocks blocks-per" style="--i:14;"></div>
-            <div class="blocks blocks-per" style="--i:15;"></div>
-            <div class="blocks blocks-per" style="--i:16;"></div>
-            <div class="blocks blocks-per" style="--i:17;"></div>
-            <div class="blocks blocks-per" style="--i:18;"></div>
-            <div class="blocks blocks-per" style="--i:19;"></div>
-            <div class="blocks blocks-per" style="--i:20;"></div>
-            <div class="blocks blocks-per" style="--i:21;"></div>
-            <div class="blocks blocks-per" style="--i:22;"></div>
-            <div class="blocks blocks-per" style="--i:23;"></div>
-            <div class="blocks blocks-per" style="--i:24;"></div>
-            <div class="blocks blocks-per" style="--i:25;"></div>
-            <div class="blocks blocks-per" style="--i:26;"></div>
-            <div class="blocks blocks-per" style="--i:27;"></div>
-            <div class="blocks blocks-per" style="--i:28;"></div>
-            <div class="blocks blocks-per" style="--i:29;"></div>
-            <div class="blocks blocks-per" style="--i:30;"></div>
-            <div class="blocks blocks-per" style="--i:31;"></div>
-            <div class="blocks blocks-per" style="--i:32;"></div>
-            <div class="blocks blocks-per" style="--i:33;"></div>
-            <div class="blocks blocks-per" style="--i:34;"></div>
-            <div class="blocks blocks-per" style="--i:35;"></div>
-            <div class="blocks blocks-per" style="--i:36;"></div>
-            <div class="blocks blocks-per" style="--i:37;"></div>
-            <div class="blocks blocks-per" style="--i:38;"></div>
-            <div class="blocks blocks-per" style="--i:39;"></div>
-            <div class="blocks blocks-per" style="--i:40;"></div>
-            <div class="blocks blocks-per" style="--i:41;"></div>
-            <div class="blocks blocks-per" style="--i:42;"></div>
-            <div class="blocks blocks-per" style="--i:43;"></div>
-            <div class="blocks blocks-per" style="--i:44;"></div>
-            <div class="blocks blocks-per" style="--i:45;"></div>
-            <div class="blocks " style="--i:46;"></div>
-            <div class="blocks " style="--i:47;"></div>
-            <div class="blocks " style="--i:48;"></div>
-            <div class="blocks " style="--i:49;"></div>
-            <div class="blocks " style="--i:50;"></div>
-            <h3 class="percent">90<span class="span">%</span></h3>
-            <h4 class="text text-html">HTML</h4>
-          </div>
-        </div>
-
-        <div class="skills-box" data-aos="fade-up">
-          <div class="loading">
-            <div class="blocks blocks-per" style="--i:1;"></div>
-            <div class="blocks blocks-per" style="--i:2;"></div>
-            <div class="blocks blocks-per" style="--i:3;"></div>
-            <div class="blocks blocks-per" style="--i:4;"></div>
-            <div class="blocks blocks-per" style="--i:5;"></div>
-            <div class="blocks blocks-per" style="--i:6;"></div>
-            <div class="blocks blocks-per" style="--i:7;"></div>
-            <div class="blocks blocks-per" style="--i:8;"></div>
-            <div class="blocks blocks-per" style="--i:9;"></div>
-            <div class="blocks blocks-per" style="--i:10;"></div>
-            <div class="blocks blocks-per" style="--i:11;"></div>
-            <div class="blocks blocks-per" style="--i:12;"></div>
-            <div class="blocks blocks-per" style="--i:13;"></div>
-            <div class="blocks blocks-per" style="--i:14;"></div>
-            <div class="blocks blocks-per" style="--i:15;"></div>
-            <div class="blocks blocks-per" style="--i:16;"></div>
-            <div class="blocks blocks-per" style="--i:17;"></div>
-            <div class="blocks blocks-per" style="--i:18;"></div>
-            <div class="blocks blocks-per" style="--i:19;"></div>
-            <div class="blocks blocks-per" style="--i:20;"></div>
-            <div class="blocks blocks-per" style="--i:21;"></div>
-            <div class="blocks blocks-per" style="--i:22;"></div>
-            <div class="blocks blocks-per" style="--i:23;"></div>
-            <div class="blocks blocks-per" style="--i:24;"></div>
-            <div class="blocks blocks-per" style="--i:25;"></div>
-            <div class="blocks blocks-per" style="--i:26;"></div>
-            <div class="blocks blocks-per" style="--i:27;"></div>
-            <div class="blocks blocks-per" style="--i:28;"></div>
-            <div class="blocks blocks-per" style="--i:29;"></div>
-            <div class="blocks blocks-per" style="--i:30;"></div>
-            <div class="blocks blocks-per" style="--i:31;"></div>
-            <div class="blocks blocks-per" style="--i:32;"></div>
-            <div class="blocks blocks-per" style="--i:33;"></div>
-            <div class="blocks blocks-per" style="--i:34;"></div>
-            <div class="blocks blocks-per" style="--i:35;"></div>
-            <div class="blocks blocks-per" style="--i:36;"></div>
-            <div class="blocks blocks-per" style="--i:37;"></div>
-            <div class="blocks blocks-per" style="--i:38;"></div>
-            <div class="blocks blocks-per" style="--i:39;"></div>
-            <div class="blocks blocks-per" style="--i:40;"></div>
-            <div class="blocks blocks-per" style="--i:41;"></div>
-            <div class="blocks" style="--i:42;"></div>
-            <div class="blocks" style="--i:43;"></div>
-            <div class="blocks" style="--i:44;"></div>
-            <div class="blocks" style="--i:45;"></div>
-            <div class="blocks" style="--i:46;"></div>
-            <div class="blocks" style="--i:47;"></div>
-            <div class="blocks" style="--i:48;"></div>
-            <div class="blocks" style="--i:49;"></div>
-            <div class="blocks" style="--i:50;"></div>
-            <h3 class="percent">84<span class="span">%</span></h3>
-            <h4 class="text-css text">CSS</h4>
-          </div>
-        </div>
-
-        <div class="skills-box" data-aos="fade-up">
-          <div class="loading">
-            <div class="blocks blocks-per" style="--i:1;"></div>
-            <div class="blocks blocks-per" style="--i:2;"></div>
-            <div class="blocks blocks-per" style="--i:3;"></div>
-            <div class="blocks blocks-per" style="--i:4;"></div>
-            <div class="blocks blocks-per" style="--i:5;"></div>
-            <div class="blocks blocks-per" style="--i:6;"></div>
-            <div class="blocks blocks-per" style="--i:7;"></div>
-            <div class="blocks blocks-per" style="--i:8;"></div>
-            <div class="blocks blocks-per" style="--i:9;"></div>
-            <div class="blocks blocks-per" style="--i:10;"></div>
-            <div class="blocks blocks-per" style="--i:11;"></div>
-            <div class="blocks blocks-per" style="--i:12;"></div>
-            <div class="blocks blocks-per" style="--i:13;"></div>
-            <div class="blocks blocks-per" style="--i:14;"></div>
-            <div class="blocks blocks-per" style="--i:15;"></div>
-            <div class="blocks blocks-per" style="--i:16;"></div>
-            <div class="blocks blocks-per" style="--i:17;"></div>
-            <div class="blocks blocks-per" style="--i:18;"></div>
-            <div class="blocks blocks-per" style="--i:19;"></div>
-            <div class="blocks blocks-per" style="--i:20;"></div>
-            <div class="blocks blocks-per" style="--i:21;"></div>
-            <div class="blocks blocks-per" style="--i:22;"></div>
-            <div class="blocks blocks-per" style="--i:23;"></div>
-            <div class="blocks blocks-per" style="--i:24;"></div>
-            <div class="blocks blocks-per" style="--i:25;"></div>
-            <div class="blocks blocks-per" style="--i:26;"></div>
-            <div class="blocks blocks-per" style="--i:27;"></div>
-            <div class="blocks blocks-per" style="--i:28;"></div>
-            <div class="blocks blocks-per" style="--i:29;"></div>
-            <div class="blocks blocks-per" style="--i:30;"></div>
-            <div class="blocks blocks-per" style="--i:31;"></div>
-            <div class="blocks" style="--i:32;"></div>
-            <div class="blocks" style="--i:33;"></div>
-            <div class="blocks" style="--i:34;"></div>
-            <div class="blocks" style="--i:35;"></div>
-            <div class="blocks" style="--i:36;"></div>
-            <div class="blocks" style="--i:37;"></div>
-            <div class="blocks" style="--i:38;"></div>
-            <div class="blocks" style="--i:39;"></div>
-            <div class="blocks" style="--i:40;"></div>
-            <div class="blocks" style="--i:41;"></div>
-            <div class="blocks" style="--i:42;"></div>
-            <div class="blocks" style="--i:43;"></div>
-            <div class="blocks" style="--i:44;"></div>
-            <div class="blocks" style="--i:45;"></div>
-            <div class="blocks " style="--i:46;"></div>
-            <div class="blocks " style="--i:47;"></div>
-            <div class="blocks " style="--i:48;"></div>
-            <div class="blocks " style="--i:49;"></div>
-            <div class="blocks " style="--i:50;"></div>
-            <h3 class="percent">62<span class="span">%</span></h3>
-            <h4 class="text-js text">JS</h4>
-          </div>
-        </div>
-
-        <div class="skills-box" data-aos="fade-up">
-          <div class="loading">
-            <div class="blocks blocks-per" style="--i:1;"></div>
-            <div class="blocks blocks-per" style="--i:2;"></div>
-            <div class="blocks blocks-per" style="--i:3;"></div>
-            <div class="blocks blocks-per" style="--i:4;"></div>
-            <div class="blocks blocks-per" style="--i:5;"></div>
-            <div class="blocks blocks-per" style="--i:6;"></div>
-            <div class="blocks blocks-per" style="--i:7;"></div>
-            <div class="blocks blocks-per" style="--i:8;"></div>
-            <div class="blocks blocks-per" style="--i:9;"></div>
-            <div class="blocks blocks-per" style="--i:10;"></div>
-            <div class="blocks blocks-per" style="--i:11;"></div>
-            <div class="blocks blocks-per" style="--i:12;"></div>
-            <div class="blocks blocks-per" style="--i:13;"></div>
-            <div class="blocks blocks-per" style="--i:14;"></div>
-            <div class="blocks blocks-per" style="--i:15;"></div>
-            <div class="blocks blocks-per" style="--i:16;"></div>
-            <div class="blocks blocks-per" style="--i:17;"></div>
-            <div class="blocks blocks-per" style="--i:18;"></div>
-            <div class="blocks blocks-per" style="--i:19;"></div>
-            <div class="blocks blocks-per" style="--i:20;"></div>
-            <div class="blocks blocks-per" style="--i:21;"></div>
-            <div class="blocks blocks-per" style="--i:22;"></div>
-            <div class="blocks blocks-per" style="--i:23;"></div>
-            <div class="blocks blocks-per" style="--i:24;"></div>
-            <div class="blocks blocks-per" style="--i:25;"></div>
-            <div class="blocks blocks-per" style="--i:26;"></div>
-            <div class="blocks blocks-per" style="--i:27;"></div>
-            <div class="blocks blocks-per" style="--i:28;"></div>
-            <div class="blocks blocks-per" style="--i:29;"></div>
-            <div class="blocks blocks-per" style="--i:30;"></div>
-            <div class="blocks" style="--i:31;"></div>
-            <div class="blocks" style="--i:32;"></div>
-            <div class="blocks" style="--i:33;"></div>
-            <div class="blocks" style="--i:34;"></div>
-            <div class="blocks" style="--i:35;"></div>
-            <div class="blocks" style="--i:36;"></div>
-            <div class="blocks" style="--i:37;"></div>
-            <div class="blocks" style="--i:38;"></div>
-            <div class="blocks" style="--i:39;"></div>
-            <div class="blocks" style="--i:40;"></div>
-            <div class="blocks" style="--i:41;"></div>
-            <div class="blocks" style="--i:42;"></div>
-            <div class="blocks" style="--i:43;"></div>
-            <div class="blocks" style="--i:44;"></div>
-            <div class="blocks" style="--i:45;"></div>
-            <div class="blocks" style="--i:46;"></div>
-            <div class="blocks" style="--i:47;"></div>
-            <div class="blocks" style="--i:48;"></div>
-            <div class="blocks" style="--i:49;"></div>
-            <div class="blocks" style="--i:50;"></div>
-            <h3 class="percent">60<span class="span">%</span></h3>
-            <h4 class="text-wordpress text">React.JS</h4>
-          </div>
-        </div>
-
-        <div class="skills-box" data-aos="fade-up">
-          <div class="loading">
-            <div class="blocks blocks-per" style="--i:1;"></div>
-            <div class="blocks blocks-per" style="--i:2;"></div>
-            <div class="blocks blocks-per" style="--i:3;"></div>
-            <div class="blocks blocks-per" style="--i:4;"></div>
-            <div class="blocks blocks-per" style="--i:5;"></div>
-            <div class="blocks blocks-per" style="--i:6;"></div>
-            <div class="blocks blocks-per" style="--i:7;"></div>
-            <div class="blocks blocks-per" style="--i:8;"></div>
-            <div class="blocks blocks-per" style="--i:9;"></div>
-            <div class="blocks blocks-per" style="--i:10;"></div>
-            <div class="blocks blocks-per" style="--i:11;"></div>
-            <div class="blocks blocks-per" style="--i:12;"></div>
-            <div class="blocks blocks-per" style="--i:13;"></div>
-            <div class="blocks blocks-per" style="--i:14;"></div>
-            <div class="blocks blocks-per" style="--i:15;"></div>
-            <div class="blocks blocks-per" style="--i:16;"></div>
-            <div class="blocks blocks-per" style="--i:17;"></div>
-            <div class="blocks blocks-per" style="--i:18;"></div>
-            <div class="blocks blocks-per" style="--i:19;"></div>
-            <div class="blocks blocks-per" style="--i:20;"></div>
-            <div class="blocks blocks-per" style="--i:21;"></div>
-            <div class="blocks blocks-per" style="--i:22;"></div>
-            <div class="blocks blocks-per" style="--i:23;"></div>
-            <div class="blocks blocks-per" style="--i:24;"></div>
-            <div class="blocks blocks-per" style="--i:25;"></div>
-            <div class="blocks blocks-per" style="--i:26;"></div>
-            <div class="blocks blocks-per" style="--i:27;"></div>
-            <div class="blocks blocks-per" style="--i:28;"></div>
-            <div class="blocks blocks-per" style="--i:29;"></div>
-            <div class="blocks blocks-per" style="--i:30;"></div>
-            <div class="blocks blocks-per" style="--i:31;"></div>
-            <div class="blocks blocks-per" style="--i:32;"></div>
-            <div class="blocks blocks-per" style="--i:33;"></div>
-            <div class="blocks blocks-per" style="--i:34;"></div>
-            <div class="blocks blocks-per" style="--i:35;"></div>
-            <div class="blocks blocks-per" style="--i:36;"></div>
-            <div class="blocks blocks-per" style="--i:37;"></div>
-            <div class="blocks blocks-per" style="--i:38;"></div>
-            <div class="blocks" style="--i:39;"></div>
-            <div class="blocks" style="--i:40;"></div>
-            <div class="blocks" style="--i:41;"></div>
-            <div class="blocks" style="--i:42;"></div>
-            <div class="blocks" style="--i:43;"></div>
-            <div class="blocks" style="--i:44;"></div>
-            <div class="blocks" style="--i:45;"></div>
-            <div class="blocks" style="--i:46;"></div>
-            <div class="blocks" style="--i:47;"></div>
-            <div class="blocks" style="--i:48;"></div>
-            <div class="blocks" style="--i:49;"></div>
-            <div class="blocks" style="--i:50;"></div>
-            <h3 class="percent">75<span class="span">%</span></h3>
-            <h4 class="text-bootstrap text">Bootstrap</h4>
-          </div>
-        </div>
-
-
+      <div class="skill-cont">
+      <div id="holder">
       </div>
+   
 
       <div class="section-title skills-title">
-        <p>Junior Web Developer specializing in front-end development. I
-          have 6 months experience with all stages of the development
-          cycle for dynamic web projects. Well-versed in programming
-          languages including <span>HTML5, JavaScript, CSS, React.JS, Bootstrap, C, C++.
-          </span> In addition to that I have some basic skills in terms of <span> jQuery, Node.js, Linux, WordPress,
-            Latex, PHP,
-            MySQL</span> and others. Maybe I don’t know a lot of thing but I can learn really</p>
+        <p> I specialize in front-end development and have a strong foundation in the following programming languages and technologies:</p>
+        <p><span>HTML5:</span> Proficient in creating semantically structured and accessible web content. <br>
+          <span>JavaScript:</span> Skilled in developing interactive and responsive web applications.<br>
+          <span>CSS:</span> Experienced in crafting beautiful and responsive user interfaces.<br>
+          <span>React.JS:</span> Proficient in building dynamic and modern web applications.<br>
+          <span>Bootstrap:</span> Used for creating responsive and mobile-first web designs.<br>
 
-        fast.
+          In addition to my core skills, I have a working knowledge of various other technologies and tools, including:<br>
+          <span>C, C++, jQuery, Node.js,  Linux,  WordPress, LaTeX, PHP, MySQL,</span> </p>
+
+     
       </div>
-
+ </div>
     </div>
 
     </div>
@@ -482,7 +188,7 @@
       <h2>Get In Touch</h2>
       <p>I'm always open to new opportunities and collaborations. Feel free to get in touch!</p>
             <button class="btn-pr-more" type="submit"> <a
-                href="mailto:olimjon.orifjonov.coder@gmail.com">Say Hello!</a></button>
+                href="mailto:olimjon.coder@gmail.com">Say Hello!</a></button>
       </div>
   </section>
 
