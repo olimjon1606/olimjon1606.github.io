@@ -506,6 +506,12 @@ p {
 
 /* skills */
 
+#skills {
+  margin-top: 100px;
+}
+#skills .container{
+  width: 80%;
+}
 #skills .skill-cont{
   display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -514,7 +520,6 @@ p {
 }
 
 #skills #holder a{
-
     cursor: pointer;
     pointer-events: none;
  
@@ -524,6 +529,7 @@ p {
   margin-top: 40px;
   padding-left: 0;
   margin-left: 0;
+  font-size: 18px;
   
 }
 #skills p span{
