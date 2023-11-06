@@ -330,7 +330,7 @@ h6 {
   height: 140px;
   margin-left: 7px;
   margin-top: 10px;
-  background-color: var(--light-slate);
+  background-color: transparent;
 }
 .social-links span {
   padding: 3px 5px;
