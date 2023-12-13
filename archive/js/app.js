@@ -8,35 +8,11 @@
 import { fetchData } from "./api.js";
 import { numberToKilo } from "./module.js";
 
-
-
 const addEventOnElements = function ($elements, eventType, callback) {
     for (const $item of $elements) {
         $item.addEventListener(eventType, callback);
     }
 }
-
-// const $header = document.querySelector("[data-header]");
-
-// window.addEventListener("scroll", function () {
-//     $header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
-// })
-
-
-// search toggle 
-
-// const $searchToggler = document.querySelector("[data-search-toggler")
-// const $searchField = document.querySelector("[data-search-field")
-
-// let isExpanded = false;
-
-// $searchToggler.addEventListener("click", function () {
-//     $header.classList.toggle("search-active")
-//     isExpanded = isExpanded ? false : true;
-//     this.setAttribute("aria-expanded", isExpanded);
-//     $searchField.focus()
-// })
-
 
 // Tab navigation
 
@@ -81,18 +57,6 @@ const $searchSubmit = document.querySelector("[data-search-submit]")
 
 let apiUrl = "https://api.github.com/users/olimjon1606"
 let repoUrl, followerUrl, followingUrl = ""
-
-// const searchUser = function () {
-//     if (!$searchField.value) return;
-//     apiUrl = `https://api.github.com/users/${$searchField.value}`
-
-//     updateProfile(apiUrl)
-// }
-
-// $searchSubmit.addEventListener("click", searchUser);
-// $searchField.addEventListener("keydown", e => {
-//     if (e.key === "Enter") searchUser();
-// });
 
 // Profile
 
@@ -151,24 +115,16 @@ window.updateProfile = function (profileUrl) {
 
         repoUrl = repos_url;
         followerUrl = followers_url;
-        // followingUrl = following_url.replace("{/other_user}", "");
-
         $profileCard.innerHTML = 
-            
-       
         ``;
-
         updateRepository();
-
     }, () => {
         $error.style.display = "grid";
         document.body.style.overflowY = "hidden";
-
         $error.innerHTML = ``
     });
 }
 updateProfile(apiUrl)
-
 
 // Repository
 
@@ -296,7 +252,3 @@ const updateForkRepo = function () {
 }
 
 $forkTabBtn.addEventListener("click", updateForkRepo);
-
-// Followers
-
-//Following 
