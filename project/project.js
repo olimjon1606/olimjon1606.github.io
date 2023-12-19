@@ -5,7 +5,7 @@ const projects = [
         title: ["GitFinder", "https://gitfinderr.netlify.app/",],
         details: "Git Finder is a user-friendly web application for GitHub enthusiasts. With a simple username search, you can access valuable information about any GitHub user. Explore their repositories, followers, and followings effortlessly. Git Finder leverages the GitHub API, ensuring you get the latest updates.",
         list: ["JavaScript", "Node.js", "GitHub API", "CSS", "HTML"],
-        img: "./project/images/git finder.png",
+        img: "./project/images/git-finder.png",
         links: ["https://github.com/olimjon1606/GitHub-App", "https://gitfinderr.netlify.app/"],
 
     },
