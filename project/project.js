@@ -22,11 +22,11 @@ const projects = [
     {
         id: 3,
         label: "Featured Project",
-        title: ["Movies", "https://the-list-of-best-movies.netlify.app/",],
-        details: "Whether you're a seasoned film buff, a casual moviegoer, or just looking for an excellent movie night pick, our web app is here to guide you. Immerse yourself in a universe of movie information, from ratings and reviews to production dates and much more.",
-        list: ["JavaScript", "PHP", "SCSS", "CSS", "HTML"],
-        img: "./project/images/movie.png",
-        links: ["https://github.com/olimjon1606/list-of-best-movies", "https://the-list-of-best-movies.netlify.app/"],
+        title: ["Shopper", "https://app.netlify.com/sites/shopper-ecom/",],
+        details: "Welcome to Shopper, your premier destination for an unparalleled online shopping experience. Dive into a world where convenience meets style, and discover a curated selection of products that cater to your every need.",
+        list: ["React.js", "Next.js", "CSS", "HTML"],
+        img: "./project/images/shopper.png",
+        links: ["https://github.com/olimjon1606/ecommerce", "https://app.netlify.com/sites/shopper-ecom/"],
 
     }
 
@@ -35,13 +35,27 @@ const projects = [
 const archive = [
     {
         id: 1,
+        links: ["https://github.com/olimjon1606/code-box", "https://code-box-01.netlify.app/"],
+        title: ["https://code-box-01.netlify.app/", "CodeBox_",],
+        details: "The Code Box Study Center Website is a dynamic and user-friendly web application designed to provide students and educators with a comprehensive platform for learning, collaboration, and resource sharing",
+        list: ["JavaScript", "SCSS", "CSS", "HTML"],
+    },
+    {
+        id: 2,
+        links: ["https://github.com/olimjon1606/list-of-best-movies", "https://the-list-of-best-movies.netlify.app/"],
+        title: ["https://the-list-of-best-movies.netlify.app/", "Movies",],
+        details: "Whether you're a seasoned film buff, a casual moviegoer, or just looking for an excellent movie night pick, our web app is here to guide you. Immerse yourself in a universe of movie information, from ratings and reviews to production dates and much more.",
+        list: ["JavaScript", "PHP", "SCSS", "CSS", "HTML"],
+    },
+    {
+        id: 3,
         links: ["https://github.com/olimjon1606/online-coffee-shopp", "https://online-coffee-shop.netlify.app/"],
         title: ["https://online-coffee-shop.netlify.app/", "Coffee Shop",],
         details: "Designed for coffee connoisseurs, casual sippers, and café owners alike, this web application offers an immersive coffee experience that brings the aroma and ambiance of your favorite coffee shop right to your screen.",
         list: ["JavaScript", "CSS", "HTML"]
     },
     {
-        id: 2,
+        id: 4,
         links: ["https://github.com/olimjon1606/dice_game", "https://playdice-game.netlify.app/"],
         title: ["https://playdice-game.netlify.app/", "PlayDice",],
         details: "The Dice Game is a browser-based application that allows users to play a virtual dice game. It's designed to be simple and intuitive, providing an enjoyable gaming experience for players of all ages.",
@@ -49,7 +63,7 @@ const archive = [
 
     },
     {
-        id: 3,
+        id: 5,
         links: ["https://github.com/olimjon1606/drum_kit", "https://my-drum-play.netlify.app"],
         title: ["https://my-drum-play.netlify.app", "PlayDrum",],
         details: "The Drum Game Web Application is a browser-based application designed to bring the joy of drumming to users of all skill levels.",
@@ -57,7 +71,7 @@ const archive = [
 
     },
     {
-        id: 4,
+        id: 6,
         links: ["https://github.com/olimjon1606/weather", "https://weather-forecasting-website.netlify.app"],
         title: ["https://weather-forecasting-website.netlify.app", "Weather",],
         details: "It provides a wide range of weather data and features to help users stay informed and make decisions related to travel, outdoor activities, and daily planning",
@@ -65,7 +79,7 @@ const archive = [
 
     },
     {
-        id: 5,
+        id: 7,
         links: ["https://github.com/olimjon1606/laruki", "https://laruki-my-website.netlify.app"],
         title: ["https://laruki-my-website.netlify.app", "Laruki",],
         details: "Laruki is an online platform that offers a comprehensive suite of tools and features for software developers, teams, and organizations.",
@@ -73,7 +87,7 @@ const archive = [
 
     },
     {
-        id: 6,
+        id: 8,
         links: ["https://github.com/olimjon1606/bella_food-store", "https://bellaa-my-website.netlify.app"],
         title: ["https://bellaa-my-website.netlify.app", "Bella",],
         details: "Bella Web Food Store is an online destination that offers a delightful and convenient food shopping experience.",
