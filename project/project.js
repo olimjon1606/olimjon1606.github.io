@@ -35,10 +35,10 @@ const projects = [
 const archive = [
     {
         id: 1,
-        links: ["https://github.com/olimjon1606/code-box", "https://code-box-01.netlify.app/"],
-        title: ["https://code-box-01.netlify.app/", "CodeBox_",],
-        details: "The Code Box Study Center Website is a dynamic and user-friendly web application designed to provide students and educators with a comprehensive platform for learning, collaboration, and resource sharing",
-        list: ["JavaScript", "SCSS", "CSS", "HTML"],
+        links: ["https://github.com/olimjon1606/tic-tac-toe", "https://tic-tac-toe-g4me.netlify.app/"],
+        title: ["https://tic-tac-toe-g4me.netlify.app/", "CodeBox_",],
+        details: "A sleek React Tic-Tac-Toe game for two players. Enjoy a classic gaming experience with a modern twist!",
+        list: ["JavaScript", "React", "CSS", "HTML"],
     },
     {
         id: 2,
