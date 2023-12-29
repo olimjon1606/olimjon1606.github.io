@@ -44,7 +44,7 @@ const archive = [
         id: 2,
         links: ["https://github.com/olimjon1606/list-of-best-movies", "https://the-list-of-best-movies.netlify.app/"],
         title: ["https://the-list-of-best-movies.netlify.app/", "Movies",],
-        details: "Whether you're a seasoned film buff, a casual moviegoer, or just looking for an excellent movie night pick, our web app is here to guide you. Immerse yourself in a universe of movie information, from ratings and reviews to production dates and much more.",
+        details: "Whether you're a seasoned film buff, a casual moviegoer, or just looking for an excellent movie night pick, our web app is here to guide you.",
         list: ["JavaScript", "PHP", "SCSS", "CSS", "HTML"],
     },
     {
