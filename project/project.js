@@ -36,26 +36,33 @@ const archive = [
     {
         id: 1,
         links: ["https://github.com/olimjon1606/tic-tac-toe", "https://tic-tac-toe-g4me.netlify.app/"],
-        title: ["https://tic-tac-toe-g4me.netlify.app/", "CodeBox_",],
+        title: ["https://tic-tac-toe-g4me.netlify.app/", "Tic Tac Toe",],
         details: "A sleek React Tic-Tac-Toe game for two players. Enjoy a classic gaming experience with a modern twist!",
         list: ["JavaScript", "React", "CSS", "HTML"],
     },
     {
         id: 2,
+        links: ["https://github.com/olimjon1606/investment-calc", "https://investment-calcul4tor.netlify.app/"],
+        title: ["https://investment-calcul4tor.netlify.app/", "Investment Calc.",],
+        details: "React.js investment calculator for smart decisions. Effortlessly plan your financial future with our intuitive interface!",
+        list: ["JavaScript", "React", "CSS", "HTML"],
+    },
+    {
+        id: 3,
         links: ["https://github.com/olimjon1606/list-of-best-movies", "https://the-list-of-best-movies.netlify.app/"],
         title: ["https://the-list-of-best-movies.netlify.app/", "Movies",],
         details: "Whether you're a seasoned film buff, a casual moviegoer, or just looking for an excellent movie night pick, our web app is here to guide you.",
         list: ["JavaScript", "PHP", "SCSS", "CSS", "HTML"],
     },
     {
-        id: 3,
+        id: 4,
         links: ["https://github.com/olimjon1606/online-coffee-shopp", "https://online-coffee-shop.netlify.app/"],
         title: ["https://online-coffee-shop.netlify.app/", "Coffee Shop",],
         details: "Designed for coffee connoisseurs, casual sippers, and café owners alike, this web application offers an immersive coffee experience that brings the aroma and ambiance of your favorite coffee shop right to your screen.",
         list: ["JavaScript", "CSS", "HTML"]
     },
     {
-        id: 4,
+        id: 5,
         links: ["https://github.com/olimjon1606/dice_game", "https://playdice-game.netlify.app/"],
         title: ["https://playdice-game.netlify.app/", "PlayDice",],
         details: "The Dice Game is a browser-based application that allows users to play a virtual dice game. It's designed to be simple and intuitive, providing an enjoyable gaming experience for players of all ages.",
@@ -63,7 +70,7 @@ const archive = [
 
     },
     {
-        id: 5,
+        id: 6,
         links: ["https://github.com/olimjon1606/drum_kit", "https://my-drum-play.netlify.app"],
         title: ["https://my-drum-play.netlify.app", "PlayDrum",],
         details: "The Drum Game Web Application is a browser-based application designed to bring the joy of drumming to users of all skill levels.",
@@ -71,7 +78,7 @@ const archive = [
 
     },
     {
-        id: 6,
+        id: 7,
         links: ["https://github.com/olimjon1606/weather", "https://weather-forecasting-website.netlify.app"],
         title: ["https://weather-forecasting-website.netlify.app", "Weather",],
         details: "It provides a wide range of weather data and features to help users stay informed and make decisions related to travel, outdoor activities, and daily planning",
@@ -79,7 +86,7 @@ const archive = [
 
     },
     {
-        id: 7,
+        id: 8,
         links: ["https://github.com/olimjon1606/laruki", "https://laruki-my-website.netlify.app"],
         title: ["https://laruki-my-website.netlify.app", "Laruki",],
         details: "Laruki is an online platform that offers a comprehensive suite of tools and features for software developers, teams, and organizations.",
@@ -87,7 +94,7 @@ const archive = [
 
     },
     {
-        id: 8,
+        id: 9,
         links: ["https://github.com/olimjon1606/bella_food-store", "https://bellaa-my-website.netlify.app"],
         title: ["https://bellaa-my-website.netlify.app", "Bella",],
         details: "Bella Web Food Store is an online destination that offers a delightful and convenient food shopping experience.",
